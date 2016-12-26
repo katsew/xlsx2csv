@@ -1,7 +1,7 @@
 {
   "name": "xlsx2csv",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Convert xlsx to csv text",
   "bin": {
     "xlsx2csv": "bin/xlsx2csv"
   },
@@ -13,7 +13,7 @@
   "engines": {
     "node": "^4.2.2"
   },
-  "keywords": [],
+  "keywords": ["xlsx", "csv", "converter", "xlsx2csv"],
   "author": "katsew",
   "license": "MIT",
   "devDependencies": {
