@@ -3,7 +3,7 @@
 ## install
 
 ```
-npm install -g xlsx2csv
+npm install -g node-xlsx2csv
 ```
 
 ## exec
