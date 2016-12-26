@@ -3,11 +3,11 @@
 ## install
 
 ```
-npm i -g xlsx2csv
+npm install -g xlsx2csv
 ```
 
 ## exec
 
 ```
-xlsx2csv -s [source] -o [dest]
+xlsx2csv [options] <source> <destination>
 ```
