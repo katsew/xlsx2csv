@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "bin": {
-    "xlsx2csv": "index.js"
+    "xlsx2csv": "bin/xlsx2csv"
   },
   "main": "index.js",
   "scripts": {
