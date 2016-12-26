@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const program = require('commander');
+const path = require('path');
+const vfs = require('vinyl-fs');
+const xlsx2csv = require('..');
+
+program
+  .version('0.1.0')
+  .arguments('<source> <destination>')
+  .action(function (source, destination) {
+    xlsx2csv(source, destination);
+  })
+  .parse(process.argv);
