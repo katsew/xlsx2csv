@@ -3,8 +3,6 @@
 'use strict';
 
 const program = require('commander');
-const path = require('path');
-const vfs = require('vinyl-fs');
 const xlsx2csv = require('..');
 
 program
