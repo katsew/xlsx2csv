@@ -3,12 +3,23 @@
 'use strict';
 
 const program = require('commander');
+const vfs = require('vinyl-fs');
 const xlsx2csv = require('..');
+const moduleVersion = require('../package.json').version;
 
 program
-  .version('0.1.0')
+  .version(moduleVersion)
   .arguments('<source> <destination>')
   .action(function (source, destination) {
-    xlsx2csv(source, destination);
+    try {
+      vfs.src([source ,`${source}/**/*.xlsx`])
+        .pipe(xlsx2csv({
+          src: source,
+          dest: destination
+        }))
+        .pipe(vfs.dest(destination));
+    } catch (e) {
+      console.log(e);
+    }
   })
   .parse(process.argv);
