@@ -1,6 +1,6 @@
 {
   "name": "node-xlsx2csv",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Convert xlsx to csv text",
   "bin": {
     "xlsx2csv": "bin/xlsx2csv"
